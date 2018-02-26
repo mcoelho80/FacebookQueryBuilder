@@ -70,6 +70,10 @@ class FQB
         if (isset($config['default_graph_version'])) {
             $this->graphVersion($config['default_graph_version']);
         }
+        
+        if (isset($config['default_modifiers'])) {
+            $this->modifiers($config['default_modifiers']);
+        }
 
         if (isset($config['app_secret'])) {
             $this->appSecret = $config['app_secret'];
